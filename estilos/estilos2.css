@@ -1,0 +1,634 @@
+/*--------------EBOOKS--------------*/
+#shop a> :last-child{
+    display: none;
+}
+
+#shop a{
+    background: url(../imagenes/tablet/banner.jpg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: calc(100vw * 0.4027370478983382); 
+}
+
+#shop a> :first-child{
+    width: 100%;
+    height: calc(100vw * 0.4027370478983382);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 10vw 0 10vw 4vw;
+}
+
+#shop p{
+    margin-bottom: 0;
+}
+
+#shop a div> :nth-child(3){
+    display: block;
+    padding: 0;
+    width: 405px;
+    margin-top: 0;
+}
+
+#shop h2, #shop p{
+    text-align: left;
+    padding: 0;
+}
+
+#shop h2{
+    padding-bottom: 4vw;
+    margin-top: 0;
+}
+
+#shop h2+p{
+    width: 400px;
+}
+
+
+/*--------------ARTÍCULOS--------------*/
+#art {
+    margin: 4vw 3vw;
+}
+
+#art section>h2+article img{
+    max-width: 1000px;
+    margin: 2vw auto;
+}
+
+#art div article{
+    overflow: auto;
+}
+
+#art div article figure{
+    display: block;
+    float: left;
+    margin-right: 2vw;
+}
+
+
+/*--------------BATCH COOKING--------------*/
+#batch{
+    padding: 4vw 3vw;
+}
+
+#batch> :last-child a{
+    height: 45px;
+    width: 200px;
+    line-height: 45px;
+}
+
+/*--------------BLOG--------------*/
+#blog {
+    margin: 4vw 3vw;
+}
+
+#blog article{
+    overflow: auto;
+    padding: 2vw 0;
+}
+
+#blog div> :first-child p{
+    padding-bottom: 0;
+}
+
+#blog figure{
+    display: block;
+    float: left;
+    margin-right: 2vw;
+}
+
+
+/*--------------CONTACTO--------------*/
+#contac{
+    padding: 4vw 3vw;
+}
+
+#contac>p{
+    text-align: left;
+}
+
+#contac form p{
+    display: inline-block;
+    margin: 0;
+    width: 110px;;
+    vertical-align: top;
+    line-height: 32.33px;
+}
+
+#contac form div>div{
+    margin: 15px 0;
+}
+
+#contac form>div :first-child{
+    margin-top: 0;
+}
+
+#contac form{
+    margin-top: 3vw;
+    width: 67.1vw;
+}
+
+textarea{
+    height: 160px
+}
+
+input[type=text],input[type=email], textarea{
+    width: 350px;
+}
+
+input[type=submit]{
+    width: 140px;
+    margin-left: 324.2px;
+    margin-top: 0;
+}
+
+#contac form> :last-child{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+@media screen and (max-width: 789px){
+    
+/*--------------EBOOKS--------------*/
+    #shop a> :first-child{
+        padding: 6vw 0 6vw 4vw;
+    }
+
+    #shop h2{
+        padding-bottom: 0;
+    }
+
+    #shop a div> :nth-child(3), #shop h2+p{
+        width: 310px;
+    }
+    
+}
+
+
+@media screen and (min-width: 900px){
+    
+/*--------------ARTÍCULOS--------------*/  
+    #art div article a{
+        cursor: default;
+    }
+    
+    #art div article> :last-child{
+        display: block;
+        margin: 0;
+    }
+
+    #art div article{
+        position: relative;
+    }
+    
+    #art div article> :last-child a{
+        position: absolute;
+        right: 0;
+        bottom: 1.5vw;
+        display: block;
+        color: white;
+        background: #8cc63f;
+        font-family: 'm';
+        width: 126px;
+        height: 33px;
+        line-height: 33px;
+        text-align: center;
+    }
+    
+    #art div> :last-child :last-child a{
+        bottom: 0;
+    }
+    
+    
+/*--------------BLOG--------------*/
+    #blog div>article a> :last-child{
+        display: block;
+        cursor: pointer;
+    }
+    
+    #blog div>article{
+        position: relative;
+    }
+    
+    #blog div>article a> :last-child{
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        color: white;
+        background: #8cc63f;
+        font-family: 'm';
+        width: 126px;
+        height: 33px;
+        line-height: 33px;
+        text-align: center;
+    }
+    
+    
+/*--------------CONTACTO--------------*/
+    #contac form{
+        width: calc(100vw - 8vw);
+        margin: 3vw auto 0 auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+    }
+    
+    #contac>p{
+        text-align: center;
+    }
+
+    #contac form> :first-child{
+        margin: 0;
+        width: 465px;
+        margin-right: 15px;
+    } 
+    
+    #contac form>div :last-child{
+        margin-bottom: 0;
+    }
+    
+    #contac form> :last-child{
+        margin-top: 0;
+        background: url(../imagenes/tablet/contacto2.jpg) no-repeat;
+        background-size: cover;
+        height: 365px; 
+        width: 625px;
+    }
+    
+    
+/*--------------FOOTER--------------*/
+    footer{
+        padding: 3vw;
+        padding-right: 40vw;
+    } 
+    
+}
+
+
+@media screen and (min-width: 1024px){
+
+/*--------------VÍNCULOS--------------*/
+    input[type=submit], 
+    #art div article> :last-child a, 
+    #blog div>article a> :last-child, 
+    #botones li a, 
+    #shop a div> :nth-child(4), 
+    #batch> :last-child a, 
+    #php> :last-child a{
+
+        -webkit-transition-property: all;
+
+        transition-property: all;
+        -webkit-transition-duration:0.2s;
+                transition-duration:0.2s;
+        -webkit-transition-timing-function: linear;
+                transition-timing-function: linear;
+        -webkit-transition-delay:0s;
+                transition-delay:0s;
+        text-decoration:none;
+    }
+
+    p a:hover, 
+    input[type=submit]:hover, 
+    #art div article> :last-child a:hover, 
+    #blog div>article a> :last-child:hover, 
+    #botones li a:hover, 
+    #shop a div> :nth-child(4):hover, 
+    #batch> :last-child a:hover, 
+    #php> :last-child a:hover{
+
+        background-color: white;
+        color:#8cc63f;
+        cursor: pointer;
+    }
+
+
+/*--------------EBOOKS--------------*/
+    #shop a{
+        background: none;
+        cursor: default; 
+        width: 519px;
+    }
+
+    #shop a> :first-child{
+        height: calc(100vw * 0.4033674963396779);
+        padding: 4vw;
+    }
+
+     #shop{
+        background: url(../imagenes/pc/banner.jpg) no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: calc(100vw * 0.4033674963396779); 
+    }
+
+    #shop h2{
+        font-size: 1.75em;
+        text-transform: uppercase;
+        font-family: 'sb';
+        padding: 0;
+        margin-bottom: 5vw;
+    }
+    #shop h2+p {
+        width: 519px;
+        font-size: 1.25em;
+    }
+
+    #shop a div> :nth-child(3){
+        font-size: 1.25em;
+        width: 525px;
+    }
+
+    #shop a div> :nth-child(4){
+        display: block;
+        font-family: 'm';
+        font-size: 1.5em;
+        text-transform: uppercase;
+        height: 52px;
+        width: 297px;
+        background-color: #8cc63f;
+        color: white;
+        line-height: 52px;
+        text-align: center;
+        margin-top: 5vw;
+        margin-bottom: 0;
+    }
+
+
+/*--------------TITULOS--------------*/
+    #art section>h2, #batch h2, #blog>h2, #contac>h2{
+        font-size: 1.5em;
+    }
+
+
+/*--------------ARTÍCULOS--------------*/
+    #art section>h2+article h2,h3,h4{
+        font-size: 1.25em;
+    }
+
+}
+
+
+@media screen and (min-width: 1100px){
+    
+/*--------------ENCABEZADO--------------*/
+    header{
+        padding: 0 20px ;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        height: 55px;
+    }
+
+    h1{
+        margin: 0;
+    } 
+
+    #iconos{
+        display: none;
+    }
+
+    nav{
+        position: static;
+        height: 55px;
+        display: inline-block;
+        width: 700px;
+        margin: auto;
+        left: 0;
+        right: 0;
+        position: absolute;
+    }
+
+    #botones{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        height: auto;
+        background: none;
+        position: static;
+        width: 700px;
+    }
+
+    #botones li{
+        margin: 0;
+    }
+
+    #botones li a{
+        height: 55px;
+        line-height: 55px;
+        width: 140px;
+        font-size: 1.125em;
+    }
+    
+}
+
+@media screen and (min-width: 1280px){
+    
+/*--------------ARTÍCULOS--------------*/
+    #art {
+        margin: 3vw;
+        padding: 2.5vw;
+    }    
+    
+    #art section>h2+article img{
+        max-width: 1100px;
+    }
+    
+    #art div{
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: (1fr)[2];
+            grid-template-columns: repeat(2, 1fr);
+        -ms-grid-rows: (1fr)[2];
+            grid-template-rows: repeat(2, 1fr);
+    }
+    
+    #art div article> :last-child{
+        display: none;
+    }
+    
+    #art div article a{
+        cursor: pointer;
+    }
+    
+   #art div article{
+       margin: 0;
+       padding: 0;
+    }
+    
+    #art div article p{
+        margin-top: 0.5vw;
+    }
+    
+    #art div> :first-child{
+        padding-right: 1vw;
+        padding-bottom: 1vw;
+        margin: 0;
+        border-right: solid 1px #b7b7b7;
+    }    
+    
+    #art div> :first-child+article{
+        padding-left: 1vw;
+        padding-bottom: 1vw;
+    }
+    
+    #art div> :nth-child(3){
+        padding-right: 1vw;
+        padding-top: 1vw;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        border-bottom: none;
+        border-right: solid 1px #b7b7b7;
+    }
+    
+    #art div> :last-child{
+        padding-left: 1vw;
+        padding-top: 1vw;
+    }
+    
+    #art div article h2:hover{
+        -webkit-text-decoration-line: underline;
+                text-decoration-line: underline;
+    }
+    
+/*--------------BATCH COOKING--------------*/  
+    #batch {
+        padding: 3vw;
+    }
+    
+/*Lo que se encuentra se con !important esta modificando el css por defecto que trae el video debido a que es la versión responsive*/
+    #batch div{
+        padding: 0 !important;
+        margin: 0 !important;
+        position: static !important;
+        margin-left: -0.8784773060029283vw!important;
+        float: left;
+    }
+    
+    #batch div iframe{
+        position: static !important;
+        width: 55.05124450951684vw !important;
+        height: 30.01464128843338vw !important;
+    }
+    
+    #batch> :nth-child(4){
+        margin-top: 0;
+    }
+    
+    #batch> :nth-child(5){
+        margin-top: 1vw;
+    }
+    
+    br{
+        line-height: 3vw;
+    }
+    
+  
+/*--------------BLOG--------------*/
+    #blog {
+        margin: 3vw;
+        padding: 2.5vw;
+    }
+    
+    #blog figure{
+        float: none;
+        margin: 0;
+    }
+    
+    #blog img{
+        max-width: 396px;
+        width: 100%;
+    }
+    
+    #blog figure{
+        display: block;
+        padding-bottom: 1vw;
+    }
+    
+    #blog article{
+        margin: 0;
+        padding: 0;
+        border: none;
+    }
+    
+    #blog article p{
+        margin-bottom: 0;
+        margin-top: 1vw;
+    }
+    
+    #blog div article a{
+        cursor: pointer;
+    }
+    
+    #blog div article a> :last-child{
+        display: none;
+    }
+    
+    #blog article a h2{
+        margin-top: 0;
+    }
+    
+    #blog div{
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: (1fr)[3];
+            grid-template-columns: repeat(3, 1fr);
+        -ms-grid-rows: (1fr)[2];
+            grid-template-rows: repeat(2, 1fr);
+        grid-gap: 1.5vw;
+    }
+ 
+    
+ /*--------------CONTACTO--------------*/  
+    #contac{
+        padding: 3vw;
+        position: relative
+    }
+    
+    #contac>p{
+        text-align: left;
+        width: 465px;
+    }
+    
+    #contac form{
+        display: block;
+        width: 100%;
+        margin: 20px 0 0 0;
+    }
+
+    #contac form> :last-child{
+        position: absolute;
+        bottom: 3vw;
+        right: 2vw;
+        background: url(../imagenes/pc/contacto2.jpg) no-repeat;
+        width: 730px;
+        height: 445px;
+    }   
+    
+}
+
+
+@media screen and (min-width: 1310px ){
+    
+ /*--------------CONTACTO--------------*/   
+    #contac form> :last-child{
+        background: url(../imagenes/pc/contacto.jpg) no-repeat;
+        width: 763px;
+    }  
+    
+}

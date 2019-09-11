@@ -1,0 +1,502 @@
+/*--------------GENERAL--------------*/
+@font-face {
+            font-family: 'r';
+            src: url('../tipos/montserrat-regular-webfont.eot');
+            src: url('../tipos/montserrat-regular-webfont.eot?#iefix') format('embedded-opentype'),
+                 url('../tipos/montserrat-regular-webfont.woff2') format('woff2'),
+                 url('../tipos/montserrat-regular-webfont.woff') format('woff'),
+                 url('../tipos/montserrat-regular-webfont.ttf') format('truetype'),
+                 url('../tipos/montserrat-regular-webfont.svg#r') format('svg');
+			font-weight: normal;
+            font-style: normal;
+           }
+@font-face {
+            font-family: 'm';
+            src: url('../tipos/montserrat-medium-webfont.eot');
+            src: url('../tipos/montserrat-medium-webfont.eot?#iefix') format('embedded-opentype'),
+                 url('../tipos/montserrat-medium-webfont.woff2') format('woff2'),
+                 url('../tipos/montserrat-medium-webfont.woff') format('woff'),
+                 url('../tipos/montserrat-medium-webfont.ttf') format('truetype'),
+                 url('../tipos/montserrat-medium-webfont.svg#m') format('svg');
+		    font-weight: normal;
+            font-style: normal;
+           }
+@font-face {
+            font-family: 'sb';
+            src: url('../tipos/montserrat-semibold-webfont.eot');
+            src: url('../tipos/montserrat-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+                 url('../tipos/montserrat-semibold-webfont.woff2') format('woff2'),
+                 url('../tipos/montserrat-semibold-webfont.woff') format('woff'),
+                 url('../tipos/montserrat-semibold-webfont.ttf') format('truetype'),
+                 url('../tipos/montserrat-semibold-webfont.svg#sb') format('svg');
+		    font-weight: normal;
+            font-style: normal;
+           } 
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'r','arial';
+    line-height: 1.25em;
+}
+
+img{
+    display:block
+}
+
+p{
+    margin-top: 2vw; 
+}
+
+ul li{
+    list-style-image: url(../imagenes/cel/bola.png);
+    margin-left: 19px;
+    margin-bottom: 0.5em;
+}
+
+article{
+    border-bottom: solid 1px #b7b7b7;
+}
+
+a{
+    display: block;
+    color: black;
+}
+
+iframe{
+    border:none;
+}
+
+#art section>h2, #batch h2, #blog>h2, #contac>h2, #shop h2{
+    color: #8cc63f;
+    font-size: 1.25em;
+    padding-bottom: 1.5vw;
+    font-family: 'sb';
+    text-align: center;
+}
+
+
+/*--------------ENCABEZADO--------------*/
+header{
+    color: white;
+    background-color: #8cc63f;
+    width: 100%;
+    height: 50px;
+}
+
+h1{
+    text-indent: -9000px;
+    height: 50px;
+    width: 169px;
+    background: url(../imagenes/logo.png) no-repeat center center;
+    margin: auto;
+}
+
+nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 26px;
+}
+
+#iconos{
+    width: 26px;
+    height: 26px;
+    margin-top: calc(50px - 39px);
+    margin-left: calc(50px - 39px);
+}
+
+#iconos li{
+    text-indent: -9000px;
+	overflow: hidden;
+    margin-left: 0;
+}
+
+#iconos li a{
+    background: url(../imagenes/cel/menu.png) no-repeat;
+    width: 26px;
+    height: 26px;
+}
+
+#iconos a[href="#"] {
+    display: none;
+}
+
+#botones {
+    width: 100vw;
+    height: 0;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background: rgba(140, 198, 63, 0.95);
+    -webkit-transition: height .5s ease;
+    transition: height .5s ease;    
+    overflow: hidden;
+}
+
+#botones li{
+    list-style-image: none;
+    margin: 0;
+}
+
+#botones li a {
+    color: white;
+    text-align: center;
+    height:50px;
+    line-height:50px;
+    font-size: 1.25em;
+    font-family: 'sb';
+    text-transform: uppercase;
+}
+
+
+nav:target #botones {
+   height: calc(100vh - 50px);
+   border-top: solid 1px white;
+}
+
+nav:target #iconos :first-child {
+    display: none;
+}
+
+nav:target #iconos a[href="#"] {
+    display: block;
+    background-position: 0 -26px;
+}
+
+
+/*--------------EBOOKS--------------*/
+#shop a> :last-child{
+    background: url(../imagenes/cel/banner.jpg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: calc(100vw * 0.4185714285714286); 
+}
+
+#shop h2{
+    color:black;
+    text-transform: uppercase;
+    margin: 4vw 0 2vw 0;
+    padding: 0;
+}
+
+#shop p{
+    padding: 0 4vw;
+    margin-bottom: 4vw;
+    margin-top: 0;
+    text-align: center;
+}
+
+#shop a div> :nth-child(3), #shop a div> :nth-child(4){
+    display: none;
+}
+/*--------------ARTÍCULOS--------------*/
+#art {
+    padding: 4vw;
+    margin: 4vw 2vw;
+    background: #f4f4f4;
+}
+
+#art section>h2{
+    text-align: left;
+    border-bottom: solid 1px #b7b7b7;
+    padding-bottom: 0.2vw;
+}
+
+
+#art section>h2+article h2,h3,h4{
+    font-size: 1.125em;
+    margin: 2.5vw 0;
+}
+
+#art section>h2+article img{
+    max-width: 600px;
+    width: 100%;
+    margin: 3.75vw 0;
+}
+
+#art section>h2+article figure+h3{
+    margin-top: 0;
+}
+
+#art section>h2+article h2+p{
+    margin: 0;
+}
+
+#art ul li{
+    list-style: url(../imagenes/cel/bola.png);
+    margin-left: 19px;
+    margin-bottom: 0.5em;
+}
+
+#art section>h2+article ul :last-child{
+    margin-bottom: 0;
+}
+
+#art section>h2+article ol{
+    counter-reset: li;
+}
+
+#art section>h2+article ol li:before{
+    content: counter(li)'.'; 
+    color: #8cc63f;
+    display: inline-block; 
+    width: 1em;
+    font-family: 'sb';
+}
+
+#art section>h2+article ol li{
+    counter-increment: li;
+    margin-bottom: 0.5em;
+}
+
+#art section>h2+article ol :last-child{
+    margin-bottom: 0;
+}
+
+#art section>h2+article{
+    padding-bottom: 2vw;
+}
+
+#art section>h3{
+    color: #8cc63f;
+    font-size: 1.25em;
+    margin: 2vw 0 2.5vw 0; 
+}
+
+#art div article figure{
+    display: none;
+}
+
+#art div article a h2{
+    color: #8cc63f;
+    font-family: 'm';
+}
+
+#art div article p{
+    font-size: 0.875em;
+}
+
+#art div article p a{
+    display: inline-block;
+}
+
+#art div article{
+    margin-bottom: 1.5vw;
+    padding-bottom: 1.5vw;
+}
+
+#art div article> :last-child{
+    display: none;
+}
+
+#art div> :last-child{
+    margin: 0;
+    border-bottom: none;
+    padding: 0;
+}
+
+
+/*--------------BATCH COOKING--------------*/
+#batch{
+    padding: 4vw 2vw;
+    background: #f4f4f4;
+}
+
+#batch ul :first-child{
+    margin-top: 0.5em;
+}
+
+#batch> :last-child a{
+    margin-top: 40px;
+    height: 50px;
+    color: white;
+    background: #8cc63f;
+    font-family: 'sb';
+    line-height: 50px;
+    font-size: 1.25em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+/*--------------BLOG--------------*/
+#blog {
+    padding: 4vw;
+    margin: 4vw 2vw;
+    background: #f4f4f4;
+}
+
+#blog figure{
+    display: none;
+}
+
+#blog article a h2 {
+    color: #8cc63f;
+    font-family: 'm';
+    font-size: 1.125em;
+    margin-top: 2vw;
+}
+
+#blog article p{
+    font-size: 0.875em;
+    margin-bottom:2vw;
+}
+
+#blog article a> :last-child{
+    display: none;
+}
+
+#blog div> :last-child{
+    border-bottom: none;
+}
+
+/*--------------CONTACTO--------------*/
+#contac{
+    padding: 4vw 2vw;
+    background: #f4f4f4;
+    margin-bottom: 4vw;
+}
+
+#contac>div{
+    display: none;
+}
+
+#contac>p{
+    text-align: center;
+}
+
+#contac form p{
+    margin: 3.125vw 0 2vw 0;
+    font-family: 'sb';
+}
+
+#contac form{
+    margin: auto;
+    width: 80vw;
+}
+
+input[type=text],input[type=email], textarea{
+    outline:none; 
+    width: 80vw;
+    color: black;
+    background: rgba(140, 198, 63, 0.5);
+    border: none;
+    resize: none;
+    padding: 1vw;
+}
+
+input[type=text],input[type=email]{
+    height: 35px;
+}
+
+textarea{
+    height: 25vw;
+}
+
+input[type=submit]{
+    height: 35px;
+    width: 35vw;
+    border: none;
+    color: white;
+    background: #8cc63f;
+    font-family: 'sb';
+    line-height: 35px;
+    font-size: 1.125em;
+    margin-left: 45vw;
+    margin-top: 3.125vh;
+}
+
+
+/*--------------MENSAJE PHP--------------*/
+
+#php{
+    width: 90vw;
+    height: 30vh;
+    top: calc(50% - 15vh);
+    left: calc(50% - 45vw);
+    background: rgba(255, 255, 255, 0.9);
+    position: fixed;
+}
+
+#php> :first-child{
+    color: #8cc63f;
+    font-size: 2.5em;
+    margin: 0;
+    font-family: 'sb';
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 2vh;
+}
+
+#php> :last-child{
+    text-align: center;
+    font-size: 1.5em;
+    font-family: 'm';
+    margin: 0;
+}
+
+#php> :last-child a{
+    width: 30px;
+    height: 30px;
+    font-size: 1.125em;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    background: #8cc63f;
+    font-family: 'sb';
+    border-radius: 5%;
+    position: absolute;
+    top:-15px;
+    right: -15px;
+}
+
+#php{
+    display: none;
+}
+
+#php:target{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 6vh;
+}
+
+/*--------------FOOTER--------------*/
+footer{
+    background: #8cc63f;
+    color: white;
+    padding: 5.208333333333333vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+footer a{
+    color: white;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+footer ul li{
+    margin: 0;
+}
+
+footer div p{
+    font-family: 'sb';
+}
